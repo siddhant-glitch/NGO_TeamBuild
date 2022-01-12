@@ -1,0 +1,13 @@
+{
+  "name": "dimri_s_ngo_teambuild",
+  "version": "1.0.0",
+  "description": "my first node app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "dimdim",
+  "license": "ISC"
+}
