@@ -1,6 +1,20 @@
 //const http = require('http');
 
 import express from 'express';
+import router from './routes/index.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
+//import { mainModule } from 'process';     // for error handling only might have to ADD IT AGAIN     // nah we don't need it lmao
+
+
+
+// set up the root directory reference
+// find the global URL using fileURLToPath
+// and them turn that into the __dirname (something like users/desktop/Dimri_S_NGO_TeamBuild)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+console.log(__dirname);
 
 const app = express();
 
@@ -8,14 +22,10 @@ const app = express();
 //const port = 3000;
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-    res.send('hello from express!');
-})
+app.use(express.static(path.join(__dirname, "public")));
 
-app.get('/trevor', (req, res) => {
-    res.send(`this is dim's page`);
-})
-
+//tell app to use the router file
+app.use('/', router);
 
 app.listen(port, () => {
   console.log(`Server running at: ${port}/`);
