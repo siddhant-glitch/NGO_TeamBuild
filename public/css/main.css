@@ -16,9 +16,14 @@ a, li {
 body {
   font-family: helvetica, arial, calibri;
   margin: 0 auto;
+  background-image: linear-gradient(#ca3838, #7c2424);
 }
 
 /* General Setting is done */
+
+header {
+  border-bottom-color: white;
+}
 
 header h1 {
   display: flex;
@@ -53,6 +58,7 @@ img {
 
 .introduction h2 {
   font-size: 20px;
+  margin-top: 4.5em;
 }
 
 .introduction h3 {
