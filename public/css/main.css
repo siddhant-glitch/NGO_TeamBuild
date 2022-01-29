@@ -293,3 +293,40 @@ p {
   pointer-events: auto;
   opacity: 100%;
 }
+
+/* 404.html */
+
+.notFound {
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(#dd5151, #aa3838);
+  height: 760px;
+}
+
+.notFound img {
+  width: 350px;
+  height: 350px;
+  margin-top: 6em;
+  margin-bottom: 1em;
+}
+
+.notFound h2 {
+  font-size: 50px;
+  margin-bottom: 1em;
+}
+
+.notFound a {
+  color: white;
+  border: 3px solid #26302d;
+  border-radius: 5px;
+  background-color: #97BFB4;
+  padding: 1em 1em;
+  box-shadow: 6px 6px #26302d;
+}
+
+.notFound a:hover {
+  border: 3px solid #26302d;
+  background-color: #97BFB4;
+  box-shadow: 10px 10px #26302d;
+  transition: all .2s ease-in;
+}
