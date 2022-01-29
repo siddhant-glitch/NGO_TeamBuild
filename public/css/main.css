@@ -24,6 +24,17 @@ a {
     font-family: 'Source Serif 4', sans-serif;
 }
 
+.app {
+    margin-top: 10%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .column {
     float: left;
     width: 33.3%;
