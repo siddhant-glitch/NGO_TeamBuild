@@ -236,8 +236,4 @@ p {
   bottom: 32px;
   pointer-events: auto;
   opacity: 100%;
-
-.prev, .next :hover {
-  transition: all .2s ease-out;
-  cursor: pointer;
 }
