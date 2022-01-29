@@ -34,7 +34,7 @@ body {
   border-radius: 5px;
   background-color: #e95e5c;
   text-align: center;
-  padding: 1px 2px 3px 2px;
+  padding: 5px 2px 0px 2px;
   cursor: pointer;
 }
 
@@ -236,6 +236,7 @@ p {
   bottom: 32px;
   pointer-events: auto;
   opacity: 100%;
+}
 
 .prev, .next :hover {
   transition: all .2s ease-out;
