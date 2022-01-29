@@ -2,7 +2,7 @@
 
 This is a node based team bio page made with help of express
 
-## NGO Organization Description
+## NGO Organization
 Wikimedia Foundation:
 
 (Reference: Transparent Hands https://www.transparenthands.org/top-20-international-ngos-in-the-world/)
