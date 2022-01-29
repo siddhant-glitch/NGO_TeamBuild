@@ -42,36 +42,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# NGO_TeamBuild
-
-This is a node based team bio page made with help of express
-
-## Team Members:
-
-Siddhant Dimri, 
-
-Senghyeon Yeom, 
-
-Irene Vinu
-
-## Launch
-
-Ways to launch the application.
-
-**1.**  Git clone the repo in your PC and run the scripts 'npm run start' for normal launch, navigating to the folder in a bash terminal .
-
-**2.** Git clone the repo in your PC and run the scripts 'npm run start-ui' for nodemon launch, navigating to the folder in a bash terminal.
-
-**3.** https://ngodim.herokuapp.com/
-
-### Languages and Libraries
-
-* HTML and CSS
-* Sass
-* JavaScript
-* Node.js
-* Express
-* nodemon
-
-
-Thank you
+Thank You.
