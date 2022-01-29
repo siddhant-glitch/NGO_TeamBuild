@@ -1,5 +1,3 @@
-.hidden { display: none};
-
 *{
     margin:0;
     padding: 0;
@@ -8,8 +6,14 @@
     box-sizing: border-box;
 }
 
-a, li {
-  text-decoration: none;
+
+html {
+  scroll-behavior: smooth;
+}
+
+a, li{
+  text-decoration: none!important;
+
 }
 
 body {
@@ -19,6 +23,31 @@ body {
 }
 
 /* General Setting is done */
+
+.close p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  border: 3px solid #ad4745;
+  border-radius: 5px;
+  background-color: #e95e5c;
+  text-align: center;
+  padding: 5px 2px 0px 2px;
+  cursor: pointer;
+}
+
+.close a {
+  color: white;
+  font-weight: bold;
+}
+
+.close p:hover {
+  transition: all .2s ease-out;
+  background-color: #26302d;
+  border: 3px solid #97BFB4;
+}
 
 header {
   background-color: #1a0101;
@@ -32,6 +61,15 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   width: 800px;
+
+  margin: 15px auto 70px auto;
+  font-size: 35px;
+  color: white;
+}
+
+header a h1:hover {
+  color: #e95e5c;
+
   margin: 50px auto;
   font-size: 35px;
 }
@@ -49,16 +87,22 @@ main {
   justify-content: center;
   margin-top: 3em;
   margin-bottom: 3em;
-  background-image: linear-gradient(to bottom right, #e65451, #ce413f);
-  border: 2px solid;
-  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #e95e5c, #c94744);
+  border: 4px solid;
+  border-radius: 7px;
   padding: 50px;
   box-shadow: 10px 10px #420707;
 }
 
+
+
+.hero:hover {
+  transition: all 2s ease-in;
+  background-image: linear-gradient(to bottom right, #c94744, #e95e5c);
+}
+
 img {
   width: 250px;
-  
   border: solid 2px #420707;
   border-radius: 5px;
   box-shadow: 7px 7px #420707;
@@ -76,6 +120,10 @@ img {
 
 .hr-line {
   background-color: black;
+
+  border: 1.5px solid black;
+  border-radius: 7px;
+
   border: .5px solid black;
   border-radius: 5px;
   width: 50px;
@@ -83,6 +131,26 @@ img {
 }
 
 .introduction h3 {
+  font-size: 14px;
+}
+
+.Description {
+  width: 800px;
+  text-align: center;
+  margin: 2em auto;
+  border-radius: 5px;
+  border: 3px solid #aa3838;
+  box-shadow: 10px 10px #aa3838;
+}
+
+.Description p {
+  line-height: 24px;
+  padding: 40px 50px;
+}
+
+.Nav {
+  margin: 0 auto 2em auto;
+
   font-size: 13px;
 }
 
@@ -128,7 +196,17 @@ p {
   -webkit-transform: rotate(135deg);
 }
 
-.prev, .next {
+  
+.up {
+  padding: 6px;
+  border-width: 0 3px 3px 0;
+  margin-top: 9px;
+  margin-left: 1px;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+
+.Nav Section {
   padding: 15px 20px;
   background-color: white;
   border-radius: 5px;
@@ -136,101 +214,3 @@ p {
   box-shadow: 5px 5px #4F091D;
   cursor: pointer;
 }
-
-.prev, .next :hover {
-  transition: all .2s ease-out;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-/* *{
-    margin:0;
-    padding: 0;
-    border: none;
-    color: blue;
-    background-color: rgb(202, 56, 56);
-    color: yellow;
-    font-family: 'Source Serif 4', sans-serif;
-    box-sizing: border-box;
-}
-
-a {
-    color: pink;
-    font-size: 4em;
-    
-}
-
-.hidden { display: none};
-
-.body {
-    font-size: 16px;
-    background-color: rgb(202, 56, 56);
-    color: yellow;
-    font-family: 'Source Serif 4', sans-serif;
-}
-
-.app {
-    margin-top: 10%;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-
-/*why thi smain page is not working? */
