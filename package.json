@@ -12,6 +12,12 @@
   "author": "dimdim",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "gulp": "^4.0.2",
+    "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0"
   }
 }
