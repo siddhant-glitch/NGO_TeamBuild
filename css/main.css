@@ -1,45 +1,44 @@
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* General rules - scales images, videos to size of container */
-
 li, a {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
-a:link, a:visited { 
-	text-decoration: none!important;
-    color: #191919;
+a:link, a:visited {
+  text-decoration: none !important;
+  color: #191919;
 }
 
-a:hover, a:active { 
-	text-decoration: none!important;
+a:hover, a:active {
+  text-decoration: none !important;
 }
 
 img,
 embed,
 object,
 video {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 html {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* General rules for elements end */
 
 #yshBioTeam {
-    text-align: center;
-    margin: 2em auto;
+  text-align: center;
+  margin: 2em auto;
 }
