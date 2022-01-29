@@ -76,6 +76,10 @@ header h1 {
 
 /* home page team display */
 
+.index {
+  height: 760px;
+}
+
 .title {
   padding-top: 1.5em;
   font-weight: bold;
@@ -253,7 +257,7 @@ p {
   padding: 15px 20px;
   background-color: white;
   border-radius: 5px;
-  border: 2px solid;
+  border: 3px solid;
   box-shadow: 5px 5px #4F091D;
   cursor: pointer;
   font-weight: bold;
@@ -261,9 +265,31 @@ p {
 
 .Nav Section:hover {
   background-color: #97BFB4;
-  border: 2px solid;
+  border: 3px solid;
   box-shadow: 8px 8px #26302d;
   cursor: pointer;
   transition: all .2s ease-in;
   font-style: italic;
+}
+
+.backToTop {
+  background-color: rgb(223, 149, 149);
+  position: fixed;
+  bottom: 16px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: all .4s ease-out;
+  opacity: 0;
+}
+
+.backToTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 100%;
 }
