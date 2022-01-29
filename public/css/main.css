@@ -10,19 +10,21 @@
 
 a, li {
   text-decoration: none;
-  color: black;
 }
 
 body {
   font-family: helvetica, arial, calibri;
   margin: 0 auto;
-  background-image: linear-gradient(#ca3838, #7c2424);
+  background-image: linear-gradient(#dd5151, #aa3838);
 }
 
 /* General Setting is done */
 
 header {
-  border-bottom-color: white;
+  background-color: black;
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 header h1 {
@@ -30,7 +32,8 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   width: 800px;
-  margin: 2em auto;
+  margin: 50px auto;
+  font-size: 35px;
 }
 
 main {
@@ -44,25 +47,41 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-image: linear-gradient(to bottom right, #e65451, #ce413f);
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 50px;
+  box-shadow: 10px 10px #420707;
 }
 
 img {
   width: 250px;
   height: 250px;
-  padding-right: 1em;
+  padding-right: 2em;
 }
 
 .introduction {
-  padding-left: 1em;
+  padding-left: 3em;
+  text-align: center;
 }
 
 .introduction h2 {
-  font-size: 20px;
-  margin-top: 4.5em;
+  font-size: 25px;
+  margin-top: 3.3em;
+}
+
+.hr-line {
+  background-color: black;
+  border: .5px solid black;
+  border-radius: 5px;
+  width: 50px;
+  margin-bottom: 20px;
 }
 
 .introduction h3 {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .Description {
@@ -72,4 +91,51 @@ img {
 
 p {
   line-height: 22px;
+}
+
+.Nav {
+  margin: 0 auto 20px auto;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Nav a {
+  font-size: 15px;
+  color: black;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 0 0 2px 0;
+}
+
+.right {
+  margin-left: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  margin-right: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.prev, .next {
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid;
+  box-shadow: 5px 5px #4F091D;
+  cursor: pointer;
+}
+
+.prev, .next :hover {
+  transition: all .2s ease-out;
+  cursor: pointer;
 }
