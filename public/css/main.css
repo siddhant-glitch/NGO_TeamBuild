@@ -22,6 +22,14 @@ body {
   background-image: linear-gradient(#dd5151, #aa3838);
 }
 
+h2
+{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 /* General Setting is done */
 
 .close p {
@@ -94,7 +102,34 @@ main {
   box-shadow: 10px 10px #420707;
 }
 
+/* home page team display */
 
+.members
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.des
+{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.des a
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.des a:hover
+{
+  color: #97BFB4;
+}
 
 .hero:hover {
   transition: all 2s ease-in;
