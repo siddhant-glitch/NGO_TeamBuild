@@ -1,4 +1,4 @@
-.hidden { display: none};
+.hidden { display: none };
 
 *{
     margin:0;
@@ -8,8 +8,12 @@
     box-sizing: border-box;
 }
 
-a, li {
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
+}
+
+a, li{
+  text-decoration: none!important;
 }
 
 body {
@@ -19,6 +23,31 @@ body {
 }
 
 /* General Setting is done */
+
+.close p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  border: 3px solid #ad4745;
+  border-radius: 5px;
+  background-color: #e95e5c;
+  text-align: center;
+  padding: 1px 2px 3px 2px;
+  cursor: pointer;
+}
+
+.close a {
+  color: white;
+  font-weight: bold;
+}
+
+.close p:hover {
+  transition: all .2s ease-out;
+  background-color: #26302d;
+  border: 3px solid #97BFB4;
+}
 
 header {
   background-color: #1a0101;
@@ -32,6 +61,13 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   width: 800px;
+  margin: 15px auto 70px auto;
+  font-size: 35px;
+  color: white;
+}
+
+header a h1:hover {
+  color: #e95e5c;
   margin: 50px auto;
   font-size: 35px;
 }
@@ -49,11 +85,16 @@ main {
   justify-content: center;
   margin-top: 3em;
   margin-bottom: 3em;
-  background-image: linear-gradient(to bottom right, #e65451, #ce413f);
-  border: 2px solid;
-  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, #e95e5c, #c94744);
+  border: 4px solid;
+  border-radius: 7px;
   padding: 50px;
   box-shadow: 10px 10px #420707;
+}
+
+.hero:hover {
+  transition: all 2s ease-in;
+  background-image: linear-gradient(to bottom right, #c94744, #e95e5c);
 }
 
 img {
@@ -76,6 +117,8 @@ img {
 
 .hr-line {
   background-color: black;
+  border: 1.5px solid black;
+  border-radius: 7px;
   border: .5px solid black;
   border-radius: 5px;
   width: 50px;
@@ -83,6 +126,25 @@ img {
 }
 
 .introduction h3 {
+  font-size: 14px;
+}
+
+.Description {
+  width: 800px;
+  text-align: center;
+  margin: 2em auto;
+  border-radius: 5px;
+  border: 3px solid #aa3838;
+  box-shadow: 10px 10px #aa3838;
+}
+
+.Description p {
+  line-height: 24px;
+  padding: 40px 50px;
+}
+
+.Nav {
+  margin: 0 auto 2em auto;
   font-size: 13px;
 }
 
@@ -127,8 +189,17 @@ p {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+  
+.up {
+  padding: 6px;
+  border-width: 0 3px 3px 0;
+  margin-top: 9px;
+  margin-left: 1px;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
 
-.prev, .next {
+.Nav Section {
   padding: 15px 20px;
   background-color: white;
   border-radius: 5px;
@@ -136,6 +207,35 @@ p {
   box-shadow: 5px 5px #4F091D;
   cursor: pointer;
 }
+
+.Nav section:hover {
+  transition: all .2s ease-out;
+  background-color: #97BFB4;
+  border: 2px solid black;
+  box-shadow: 8px 8px #26302d;
+  font-style: italic;
+}
+
+.backToTop {
+  background-color: rgb(223, 149, 149);
+  position: fixed;
+  bottom: 16px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: all .4s ease-out;
+  opacity: 0;
+}
+
+.backToTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 100%;
 
 .prev, .next :hover {
   transition: all .2s ease-out;
