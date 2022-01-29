@@ -51,6 +51,7 @@ body {
 
 header {
   background-color: #1a0101;
+  color: white;
   padding-top: 1px;
   padding-bottom: 1px;
 }
@@ -67,6 +68,8 @@ header h1 {
 
 header a h1:hover {
   color: #e95e5c;
+  margin: 50px auto;
+  font-size: 35px;
 }
 
 main {
@@ -97,7 +100,7 @@ main {
 img {
   width: 250px;
   height: 250px;
-  border: solid 3px #420707;
+  border: solid 2px #420707;
   border-radius: 5px;
   box-shadow: 7px 7px #420707;
 }
@@ -116,6 +119,8 @@ img {
   background-color: black;
   border: 1.5px solid black;
   border-radius: 7px;
+  border: .5px solid black;
+  border-radius: 5px;
   width: 50px;
   margin-bottom: 20px;
 }
@@ -140,6 +145,20 @@ img {
 
 .Nav {
   margin: 0 auto 2em auto;
+  font-size: 13px;
+}
+
+.Description {
+  text-align: center;
+  margin: 2em auto;
+}
+
+p {
+  line-height: 22px;
+}
+
+.Nav {
+  margin: 0 auto 20px auto;
   width: 800px;
   display: flex;
   flex-direction: row;
@@ -170,7 +189,7 @@ img {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-
+  
 .up {
   padding: 6px;
   border-width: 0 3px 3px 0;
@@ -217,4 +236,8 @@ img {
   bottom: 32px;
   pointer-events: auto;
   opacity: 100%;
+
+.prev, .next :hover {
+  transition: all .2s ease-out;
+  cursor: pointer;
 }
