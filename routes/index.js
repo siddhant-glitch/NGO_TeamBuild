@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/index.html'));
 })
 
-router.get('/dim', (req, res) => {
+router.get('/sid', (req, res) => {
     console.log('on Dims page');
     // res.end(`this is dim's page`);   // ends stop the interaction with the routes, 'send' does not
     res.sendFile(path.join(__dirname, '../views/sid.html'));
