@@ -1,3 +1,5 @@
+.hidden { display: none};
+
 *{
     margin:0;
     padding: 0;
@@ -11,11 +13,50 @@ a, li {
   color: black;
 }
 
-.hidden { display: none};
-
 body {
   font-family: helvetica, arial, calibri;
-  margin: 10em auto;
+  margin: 0 auto;
+}
+
+/* General Setting is done */
+
+header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 800px;
+  margin: 2em auto;
+}
+
+main {
+  width: 800px;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  padding-right: 1em;
+}
+
+.introduction {
+  padding-left: 1em;
+}
+
+.introduction h2 {
+  font-size: 20px;
+}
+
+.introduction h3 {
+  font-size: 10px;
 }
 
 .Description {
@@ -23,8 +64,6 @@ body {
   margin: 2em auto;
 }
 
-.hero {
-  margin-top: 2em;
-  display: flex;
-  flex-direction: row;
+p {
+  line-height: 22px;
 }
