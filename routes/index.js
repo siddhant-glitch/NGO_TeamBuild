@@ -18,7 +18,24 @@ router.get('/', (req, res) => {
 
 router.get('/dim', (req, res) => {
     console.log('on dims page');
-    res.end(`this is dim's page`);   // ends stop the interaction with the routes, 'send' does not
+    // res.end(`this is dim's page`);   // ends stop the interaction with the routes, 'send' does not
+    res.sendFile(path.join(__dirname, '../views/team1.html'));
+    
+    // res.sendFile(path.join(__dirname, '../views/index.html'));
+})
+
+router.get('/irene', (req, res) => {
+    console.log('Irene page');
+    // res.end(`this is dim's page`);   // ends stop the interaction with the routes, 'send' does not
+    res.sendFile(path.join(__dirname, '../views/irene.html'));
+    
+    // res.sendFile(path.join(__dirname, '../views/index.html'));
+})
+
+router.get('/hyeon', (req, res) => {
+    console.log('Irene page');
+    // res.end(`this is dim's page`);   // ends stop the interaction with the routes, 'send' does not
+    res.sendFile(path.join(__dirname, '../views/hyeon.html'));
     
     // res.sendFile(path.join(__dirname, '../views/index.html'));
 })
