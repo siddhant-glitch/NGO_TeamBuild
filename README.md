@@ -15,14 +15,6 @@ Seunghyeon Yeom  : Front-End, Website UX/UI Designer
 
 Siddhant Dimri  : Back-End, Website UX/UI Designer
 
-## Tasks For Team Bio Pages
-
-Irene Mary Vinu:
-
-Seunghyeon Yeom
-
-Siddhant Dimri:
-
 ## Programs and Softwares
 
 Developing - Visual Studio Code, Git bash, Github, Heroku.

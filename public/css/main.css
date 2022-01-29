@@ -21,7 +21,7 @@ body {
 /* General Setting is done */
 
 header {
-  background-color: black;
+  background-color: #1a0101;
   color: white;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -59,11 +59,13 @@ main {
 img {
   width: 250px;
   height: 250px;
-  padding-right: 2em;
+  border: solid 2px #420707;
+  border-radius: 5px;
+  box-shadow: 7px 7px #420707;
 }
 
 .introduction {
-  padding-left: 3em;
+  padding-left: 5em;
   text-align: center;
 }
 
