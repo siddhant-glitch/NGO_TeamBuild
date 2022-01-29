@@ -6,10 +6,25 @@
     box-sizing: border-box;
 }
 
+a, li {
+  text-decoration: none;
+  color: black;
+}
+
 .hidden { display: none};
 
 body {
-    font-size: 16px;
-    background-color: black;
-    color: yellow;
+  font-family: helvetica, arial, calibri;
+  margin: 10em auto;
+}
+
+.Description {
+  text-align: center;
+  margin: 2em auto;
+}
+
+.hero {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
 }
