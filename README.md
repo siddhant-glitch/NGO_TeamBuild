@@ -4,8 +4,10 @@ This is a node based team bio page made with help of express
 
 ## Team Members:
 
-Siddhant Dimri
-Senghyeon Yeom
+Siddhant Dimri, 
+
+Senghyeon Yeom, 
+
 Irene Vinu
 
 ## Launch
